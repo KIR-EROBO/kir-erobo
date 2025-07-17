@@ -20,8 +20,9 @@ document.addEventListener("scroll", function () {
   gedung4.style.transform = `translateY(${value * 0.2}px)`;
   gedung5.style.transform = `translateY(${value * 0.1}px)`;
   hp.style.transform = `translateY(${value * 0.5}px)`;
-  (laptop.style.transform = `translateX(${-value * 0.5}px)`),
-    `translateY(${-value * 0.4}px)`;
+  laptop.style.transform = `translateX(${-value * 0.5}px) translateY(${
+    -value * 0.4
+  }px)`;
   pesawat.style.transform = `translateX(${-value * 0.2}px)`;
   kertas.style.transform = `translateX(${value * 0.5}px)`;
   human6.style.transform = `translateY(${value * 0.6}px)`;
@@ -56,3 +57,19 @@ function toggleFAQ(element) {
     faqItem.classList.add("active");
   }
 }
+// Mobile menu toggle
+const burgerMenu = document.getElementById("burger-menu");
+const navMenu = document.getElementById("nav-menu");
+
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+// Close menu when clicking on nav links
+document.querySelectorAll("#nav-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+  });
+});

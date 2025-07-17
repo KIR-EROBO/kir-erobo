@@ -12,20 +12,31 @@
   <body>
     <header id="nav">
       <img src="LogoKir.png" alt="" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#sejarah">Sejarah</a>
-        <a href="#struktur">Struktur</a>
-        <a href="#achievement">Achievement</a>
-        <a href="#faq">FAQ</a>
-        <a href="#daftar" class="active">Daftar</a>
-      </nav>
+
+      <div class="nav-container">
+        <nav id="nav-menu">
+          <a href="#">Home</a>
+          <a href="#sejarah">Sejarah</a>
+          <a href="#struktur">Struktur</a>
+          <a href="#achievement">Achievement</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a href="#daftar" class="daftar-btn">Daftar</a>
+
+        <button class="burger-menu" id="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
+
     <section class="home" id="home">
       <img src="home background/stars.png" alt="" />
-      <img src="home background/gedung1.png" id="img1" />
+      <img src="home background/gedung11.png" id="img1" />
       <img src="home background/gedung2.png" id="img2" />
-      <img src="home background/gedung3.png" id="img3" />
+      <img src="home background/gedung33.png" id="img3" />
       <img src="home background/gedung4.png" id="img4" />
       <img src="home background/img5.png" id="img5" />
       <img src="home background/hp.png" id="img01" />
@@ -45,9 +56,10 @@
       <br />
       <p data-aos="fade-right">
         Kelompok Ilmiah Remaja (KIR) SMKN 1 Jakarta berdiri sejak tahun 2012,
-        awalnya, KIR hanya kelompok kecil yang sering diikutkan Bu Siti ke
-        lomba-lomba ilmiah di Jakarta Pusat. Karena sering menang, akhirnya
-        diputuskan untuk membuat wadah resmi, dan lahirlah KIR.
+        awalnya, KIR hanya kumpulan peserta didik yang aktif lomba di bidang
+        STEM dan di dukung sekolah ke lomba-lomba ilmiah di Jakarta Pusat.
+        Karena sering menang, akhirnya diputuskan untuk membuat wadah resmi, dan
+        lahirlah KIR.
       </p>
       <br />
       <p data-aos="fade-left">
@@ -78,6 +90,26 @@
       </p>
       <br />
     </section>
+
+    <section class="divisi" id="divisi">
+      <h1>Divisi KIR EROBO</h1>
+      <div class="divisi-container">
+        <div class="divisi-card">
+          <img src="dokumentasi/science.jpeg" alt="Science Logo" />
+          <h2>Science</h2>
+          <p>Divisi yang fokus pada riset dalam bidang sains dan pertanian</p>
+        </div>
+        <div class="divisi-card">
+          <img src="dokumentasi/retek.jpeg" alt="Rekayasa Teknologi Logo" />
+          <h2>Rekayasa Teknologi</h2>
+          <p>
+            Divisi yang fokus pada inovasi teknologi, coding, elektronika, dan
+            IoT.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="struktur" id="struktur">
       <h1 data-aos="fade-down">Struktur Organisasi KIR Periode 2024/2025</h1>
       <br />
@@ -191,7 +223,7 @@
               <img src="dokumentasi/IMG-20240629-WA0005.jpg" alt="" />
               <img src="dokumentasi/IMG-20240629-WA0006.jpg" alt="" />
               <img src="dokumentasi/IMG-20240629-WA0007.jpg" alt="" />
-              <img src="dokumentasi/IMG-20240629-WA0008.jpg" alt="" />
+              <!-- <img src="dokumentasi/IMG-20240629-WA0008.jpg" alt="" /> -->
               <img src="dokumentasi/IMG-20240629-WA0009.jpg" alt="" />
               <img src="dokumentasi/IMG-20240629-WA0010.jpg" alt="" />
               <img src="dokumentasi/IMG-20240629-WA0011.jpg" alt="" />
@@ -386,7 +418,10 @@
           >
         </div>
         <footer>
-          <p>For further information:</p>
+          <p>
+            Untuk Informasi Selanjutnya Hubungi Kontak Di bawah ini (tinggal
+            klik nomor yang tertera)
+          </p>
           <div class="contact-info">
             <a href="http://wa.me/+628170808394">+62 8170808394 (Ka Bunga)</a>
             <a href="http://wa.me/+62895368503842"
